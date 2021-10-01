@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASE 2</title>
+</head>
+<body>
+    <header>
+        <h1>Sintaxis y Selectores CSS,Interacción Humano Ordenador</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li>INICIO</li>
+            <li>TEMAS
+                <ul>
+                    <li>Tema 1</li>
+                    <li>Tema 2</li>
+                </ul>
+            </li>
+            <li>RECURSOS DIGITALES
+                <ul>
+                    <li>Recurso 1</li>
+                    <li>Recurso 2</li>
+                </ul>
+
+            </li>
+            <li>APRENDIZAJE
+                <ul>
+                    <li>Actividad 1</li>
+                    <li>Actividad 2</li>
+                </ul>                
+            </li>
+            <li>ACERCA DE</li>
+        </ul>
+    </nav>
+    <hr>
+
+    <section>
+        
+            <p> proposito de esta OVI de aprendizaje es que el estudiante fortalezca sus conocimientos en la sintaxis CSS, Asi mismo trabajar y conocer los Selectores CSS y por ultimo conocer el concepto de interaccion Humano-Ordenador </p>
+        
+  
+
+    <article>
+        <p><h2>Sintaxis CSS</h2></p>
+        <p>La sintaxis nos ofrece diversas opciones para agrupar instrucciones de determinados elementos. Veamos un par de ejemplos:
+
+            <br>.elemento {<br>
+            border-top-style: solid;<br>
+            border-right-style: solid;<br>
+            border-bottom-style:solid;<br>
+            border-left-style:solid;<br>
+            border-top-width: 1px;<br>
+            border-right-width: 1px;<br>
+            border-bottom-width: 1px;<br>
+            border-left-width: 1px;<br>
+            border-top-color: #336699;<br>
+            border-right-color: #336699;<br>
+            border-bottom-color:#336699;<br>
+            border-left-color:#336699;<br>
+            <br>
+            }
+            <br>
+            Puesto que el borde es idéntico en los cuatro lados, las instrucciones se pueden resumir considerablemente:
+            
+            <br>. elemento {<br>
+            border: solid 1px #336699;<br>
+            }<br>
+            
+            <br>En la forma abreviada todas las propiedades se pueden anotar consecutivamente, separadas por un espacio en blanco. El orden en que aparezcan no tiene mayor importancia.
+            
+            <br>Posiblemente parecidas se ofrecen, por ejemplo, en margin y padding (distancias exterior e interior)
+            
+            <br>.elemento {<br>
+            margin: 5px;<br>
+            }<br>
+            <br>
+            <br>El elemento obtiene un margen de 5 pixeles en los cuatro lados incluso cuando son necesarios varios valores, hay muchas cosas que se puede simplificar:
+            
+            .elemento {<br>
+            margin: 5px 0;<br>
+            }<br>
+            
+            Aquí hemos definido un margen superior e inferior de 5 pixeles, y de 0 pixeles a la derecha e izquierda (al valor 0 [cero] no hay que añadirle ninguna unidad de medida).<br>
+            
+            .elemento {<br>
+            margin: 0 5px 10px;<br>
+            }<br>
+            <br>
+            <br>Esta sintaxis significa que estamos creando un margen superior de 0 pixeles, un margen a derecha e izquierda de 5 pixeles y un margen inferior de 10 pixeles.
+            <br>
+            .elemento {<br>
+            margin: 5px 5px 10px 20px;<br>
+            }<br>
+            <br>
+            Aquí tenemos un margen con valores distintos a cada lado. La lectura de los valores se realiza siempre desde arriba y en sentido horario, es decir:
+            <br>
+            Margen superior = 5 píxeles.<br>
+            Margen derecho = 5 píxeles.<br>
+            Margen inferior = 5 píxeles.<br>
+            Margen izquierdo = 5 píxeles.<br>
+            
+            <br>En modo de escritura, sin duda, mucho más práctico que una escritura con todos los detalles explícitos:
+            <br>
+            .elemento {<br>
+            margin-top: 5px;<br>
+            margin-right:5px;<br>
+            margin-bottom:10px<br>
+            margin-left:20px;<br>
+            }<br>
+            <br>
+            Otros elementos que permiten simplificar considerablemente la sintaxis son las familias de etiquetas como <a> y <h>. La sintaxis de los grupos siguientes no es incorrecta, pero sí demasiado larga:
+                <br>
+            a:link {<br>
+            font-family:Arial, sans-serif;<br>
+            font-weight:bold;<br>
+            text-decoration:underline;<br>
+            background-color: #ffffff;<br>
+            color:#0066ff;<br>
+            }<br>
+            a:visited {<br>
+            font-family: Arial, sans-serif;<br>
+            font-weight:bold;<br>
+            text-decoration:underline;<br>
+            background-color: #ffffff;<br>
+            color:#006699;<br>
+            }<br>
+            a:hover {<br>
+            font-family: Arial, sans-serif;<br>
+            font-weight:bold;<br>
+            text-decoration:underline;<br>
+            background-color:#ffffff;<br>
+            color:#000066;<br>
+            text-decoration:underline overline;<br>
+            }<br>
+            a:active, a:focus {<br>
+            font-family: Arial, sans-serif;<br>
+            font-weight:bold;<br>
+            text-decoration:underline;<br>
+            background-color: #ffffff;<br>
+            color: #ff9900;<br>
+            }<br>
+            <br>
+            La sintaxis siguiente, en cambio, requiere menos líneas de código y ofrece una mayor claridad. En ellas se han agrupado los valores que permanecen iguales, y para el estatus correspondiente sólo se han anotado los valores divergentes:
+            <br>
+            <br>a {<br>
+            font-family: Arial, sans-serif;<br>
+            font-weight:bold;<br>
+            text-decoration: underline;<br>
+            background-color:#ffffff;<br>
+            }<br>
+            a:link{<br>
+            color:#0066ff;<br>
+            }<br>
+            a:visited{<br>
+            color:#006699;<br>
+            }<br>
+            a:hover {<br>
+            color:#000066;<br>
+            text-decoration:underline overline;<br>
+            }<br>
+            a:active, a:focus{<br>
+            color:#ff9900;<br>
+            }<br>
+            <br>
+            Incluso los valores para el color, normalmente en notación hexadecimal, también se puede simplificar:
+            <br>
+            .elemento {<br>
+            background: #09c;<br>
+            }<br>
+            <br>
+            #09c significa aquí #0099cc <br>
+            –todos los colores con pares formados por valores idénticos, se pueden simplificar de ese modo- 
+            <br>#000000 pasa a ser #000, #bb99ff se convierte en #b9f, #66cc33 cambia a #6c3, etc. 
+            <br>Por el contrario, valores como #000043 o #65ffab no se pueden simplificar.
+            <br>
+            Sintaxis propietarias<br>
+            Si observa otros tipos de hojas de estilo, podrá comprobar que los nombres de propiedades de algunas reglas se introducen a veces con guiones. <br>Esta sintaxis está reservada para las anotaciones específicas de los fabricantes (propietarios) y sólo sirven para probar (testar) las nuevas propiedades. Cada fabricante ha introducido así una abreviatura propia que sirve ara identificar sus anotaciones y propuestas, por ejemplo:
+            <br>
+            -moz- para Mozilla<br>
+            -o- para Opera<br>
+            mso- para Microsoft <br>
+        </p>
+            <img src="img/sintaxis.jpg" alt="Sintaxis" width="400" height="400"> <P><h5>"https://cdn.pixabay.com/photo/2017/05/25/01/03/web-page-2341973_1280.jpg"</h5></P>
+            <P>Delgado, Hugo. (2014).
+                Formas de escritura resumidas y abreviadas en CSS.
+                Recuperado 30 de septiembre, 2021, de
+                https://disenowebakus.net/formas-de-escritura-resumidas-y-abreviadas-en-css.php</P>
+    </article>
+    <article>
+        <p><h2>Selectores CSS</h2></p>
+
+        Selectores para el uso de CSS
+Para identificar una etiqueta HTML, se usa los selectores “Selector” y otra parte llamada “Declaración”. <br>
+El selector iundica a que etiqueta HTML se debe aplicar el formato y la declaración indica que cosas se aplica.<br>
+<br>
+A un mismo elemento de HTML se el pueden asignar muchas propiedades definidas en CSS y estas pueden ser aplciadas <br>
+a otros elementos de HTML, Se puede aplicar a un numero infinito de elementos las propiedades que posee CSS.<br>
+<br>
+Los selectores por lo general se declaran entre las las etiquetas de HTML ( head ) (/ head ) y dentro de las de las<br>
+etiquetas ( style type = “text/css” ) Y ( /style )<br>
+<br>
+<h2>PARTES DE UN SELECTOR</h2><br>
+Las partes de un selector son :<br>
+Selector { propiedad : valor }<br>
+-	Selector: es la etiqueta (s) o elementos de HTML<br>
+-	Propiedad: atributos que se otorga a las etiquetas de HTML<br>
+-	Valor: Es el valor de la propiedad. <br>
+
+    <img src="img/Selecotr.png" alt="Selector" width="400" height="400"> <P><h5>https://upload.wikimedia.org/wikipedia/commons/c/cc/CSS-SELECT_%26_DECLARATION.png</h5></P>
+    <p>Tinoco, E. E. C., & Solís, I. S. (2014). Programación web con CSS, Javascript, PHP y AJAX. Iván Soria Solís.</p>
+    </article>
+
+        <article>
+        <P><h2>Interaccion HUMANO - ORDENADOR</h2></P>
+
+        <p> La Interacción Persona-Ordenador, IPO, es un área de desarrollo reciente, como tantas otras ligadas al campo de los ordenadores, con un carácter marcadamente interdisciplinario y que en los últimos años está viviendo un auge espectacular en sus diversas vertientes. Este auge se produce gracias a la capacidad cada vez mayor de los equipos informáticos y a la existencia de herramientas y aplicaciones cada vez más sofisticadas. Así, hoy día no nos asombra tener al alcance de nuestro cursor la última información procedente de cualquier lugar y referente a cualquier tema, par-ticipar en una conversación en la que los interlocutores estén separados por océanos sabiendo que la presencia de nuestros contertulios no se limita a la voz e incluso, aunque sea entre sueños, conseguir que nuestro ordenador nos de consejos acerca de la mejor forma de escribir un documento de trabajo, sea éste un anuncio, un examen o el prólogo de un libro.
+        En el ámbito académico esta tendencia se plasma especialmente en propuestas rela-tivas a la estructura de los planes de estudios de Informática como las de las princi-pales sociedades estadounidenses relacionadas con la computación, la ACM y la IEEE. También es de destacar la proliferación de universidades en todo el mundo que ofrecen cursos relacionados con esta materia.
+        El libro electrónico al que sirve de presentación este prólogo está escrito por un gru-po de profesores de orígenes muy diversos que, coincidiendo con la puesta en mar-cha de la Asociación para la Interacción Persona-Ordenador, AIPO, se han propuesto el loable objetivo de englobar en una única publicación la información fundamental que puede interesar a alguien que busque una introducción a la IPO, abarcando los aspectos más importantes directamente relacionados con la misma. El resultado es un libro que asombra por la diversidad de perspectivas desde las que se acerca a la problemática de la interacción entre las personas y los ordenadores, que se extien-den desde el estudio de la gran variedad de  dispositivos que hacen posible esta in-teracción hasta aspectos psicológicos, culturales y tecnológicos de la IPO.
+        La diversidad antes mencionada de las procedencias de los autores hace que leyendo el libro se perciba una proximidad y vivencia del material que se expone que no es fácil de conseguir en una publicación tan polifacética. Y, sin lugar a dudas, esta sen-sación es mayor por el entusiasmo que Jesús Lorés, alma mater de AIPO, ha conta-giado al resto de los autores como ha hecho con la organización de la propia Asocia-ción. En resumen, hay que felicitar indudablemente al propio Jesús Lorés y al resto de los profesores y expertos que se han lanzado a esta aventura y debemos felici-tarnos por poder tener en las pantallas de nuestros ordenadores este tratado sobre la IPO que nos permitirá plantearnos con mayor profundidad la enseñanza y el aprendizaje de esta importante materia.
+        </p>
+     <img src="img/Interaccion.jpg" alt="Interaccion" width="500" height="500">
+     <p>Abascal, J., & Morillón, R. (2002). Interacción persona-ordenador. Inteligencia Artif., 6(16), 9-24.</p>
+    </article>
+    </section>
+    <p><h2>Mi Mockup</h2></p>
+    <img src="img/mockup.jpg" alt="MOCKUP" width="800" height="800">
+    <footer>
+        <p>
+            <strong>correo: jonadias1@gmail.com <br>
+            Skype del autor: arcangel_1591@hotmail.com <br>
+            fecha de actualización 30 septiembre 2021 <br></strong>
+
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
