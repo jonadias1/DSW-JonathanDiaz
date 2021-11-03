@@ -1,31 +1,57 @@
 header{
-    background-color: #F0A500;
+    background-color: #D4ECDD;
+    color: #000;
+    
 }
 nav{
-    background-color: #334756;
+    background-color: #345B63;
     color: #FFF;
-    
+      
 }
 section{
 
-    background-color: #082032;
+    background-color: #152D35;
     grid-column: 1/5;
-    color: #FFF;
+    color: #000;
     }
 
 aside{
-    background-color: #082032;
+    background-color: #112031;
     grid-column: 5/6;
     color: #FFF;
 }
 footer{
-    background-color: #000000;
+    background-color: #D4ECDD;
     color: #FFF;
 }
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-ul, li{
-    margin:0 0 0 0;
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+    background-color: #000; 
+}
+#menu li{
+    display: inline-block;
+   
+}
+#menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    }
+#menu li a :hover{
+    background-color: #D4ECDD;
+    display: block;
+    }
+.item-r{
+    float:right
+}
+.datos{
+    color: aliceblue;
+    padding-left: 30px;
+    padding-top: 30px;
 }
